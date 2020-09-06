@@ -1,1 +1,2 @@
-## Starting Repo for MERN Stack - The Complete Guide
+# MERN_Project
+E-Commerce website developed using MERN stack using Next.Js React Framework
