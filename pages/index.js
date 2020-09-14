@@ -1,15 +1,17 @@
 import React from 'react';
 import axios from 'axios';
 
-function Home({products}) {
-  // console.log(products);
+import ProductList from '../components/Index/ProductList';
+import baseURL from '../utils/baseUrl';
 
-  return <>home</>;
+function Home({products}) {
+  console.log(products);
+  return <ProductList products={products} />;
 }
 
 Home.getInitialProps = async () => {
   // fetch data on the server
-  const url = 'http://localhost:3000/api/products';
+  const url = `${baseURL}/api/products`;
   const response = await axios.get(url);
   // return that response as an object
   return { products: response.data };
