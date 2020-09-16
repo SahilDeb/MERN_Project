@@ -5,7 +5,6 @@ import ProductList from '../components/Index/ProductList';
 import baseURL from '../utils/baseUrl';
 
 function Home({products}) {
-  console.log(products);
   return <ProductList products={products} />;
 }
 
